@@ -5,15 +5,15 @@
 /*  css variables */
 
 :root {
-    --card-bg-01: #fdefe6;
-    --card-bg-02: #d6e5fb;
-    --card-bg-03: #ceebe9;
-    --card-bg-04: #e2f2b2;
-    --primary-color: #0a1d37;
-    --hero-bg: #d6e5fb;
+    --card-bg-01: #e0aaff;
+    --card-bg-02: #c77dff;
+    --card-bg-03: #9d4edd;
+    --card-bg-04: #7b2cbf;
+    --primary-color: #240046;
+    --hero-bg: #9f86c0;
     --heading-fontSize: 2rem;
     --small-text-color: #999;
-    --heading-text-color: #0a1d37;
+    --heading-text-color: #4a306d;
 }
 
 
@@ -70,4 +70,11 @@ section {
 .section__title {
     color: var(--primary-color);
     font-weight: 600;
+}
+
+
+@media only screen and (max-width:768px) {
+    section {
+        padding: 40px 0px;
+    }
 }

@@ -38,3 +38,82 @@
 .hero__content {
     padding-top: 45px;
 }
+
+.timer__count {
+    background: var(--primary-color);
+    height: 300px;
+}
+
+.timer__count img {
+    width: 70% !important;
+    height: 70% !important;
+    object-fit: contain;
+}
+
+.store__btn {
+    background: #fff;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.store__btn a:hover {
+    color: var(--primary-color);
+}
+
+
+/* Responsivity */
+
+@media only screen and (max-width:992px) {
+    .hero__content h2 {
+        font-size: 2rem;
+    }
+
+    .section__title {
+        font-size: 1.7rem;
+    }
+
+    .counter__img {
+        display: none;
+    }
+
+    .clock__top-content {
+        text-align: center;
+    }
+
+    .clock__top-content h4 {
+        font-size: .9rem !important;
+    }
+
+    .clock__top-content h3 {
+        font-size: 1rem !important;
+    }
+
+    .count__down-col {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero__content h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero__section p {
+        font-size: 0.9rem;
+    }
+
+    .buy__btn a {
+        font-size: 0.9rem;
+    }
+
+    .section__title {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .hero__content {
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
+}
