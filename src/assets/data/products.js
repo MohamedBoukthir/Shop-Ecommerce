@@ -1,39 +1,39 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
+import productImg01 from "../images/hoodie05.png";
+import productImg02 from "../images/hoodie06.png";
+import productImg03 from "../images/hoodie07.png";
 
-import productImg04 from "../images/single-sofa-01.jpg";
-import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
+import productImg04 from "../images/hoodie01.png";
+import productImg05 from "../images/hoodie02.png";
+import productImg06 from "../images/hoodie03.png";
+import productImg007 from "../images/hoodie04.png";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+import productImg07 from "../images/tshirt01.png";
+import productImg08 from "../images/tshirt02.png";
+import productImg09 from "../images/tshirt03.png";
+import productImg10 from "../images/tshirt04.png";
 
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
+import productImg13 from "../images/jordan01.png";
+import productImg14 from "../images/jordan02.webp";
+import productImg15 from "../images/jordan03.webp";
+import productImg16 from "../images/jordan04.png";
+import productImg17 from "../images/jordan05.webp";
+import productImg18 from "../images/jordan06.webp";
 
 import productImg19 from "../images/watch-01.jpg";
 import productImg20 from "../images/watch-02.jpg";
 import productImg21 from "../images/watch-03.jpg";
 import productImg22 from "../images/watch-04.jpg";
 
-import productImg23 from "../images/wireless-01.png";
+import productImg23 from "../images/cap01.png";
 
-import productImg25 from "../images/wireless-03.png";
+import productImg25 from "../images/cap02.png";
 
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "CitySwag Streetwear",
     imgUrl: productImg01,
-    category: "sofa",
+    category: "hoodie",
     price: 193,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -50,9 +50,9 @@ const products = [
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
+    productName: "StreetVibe Hoodie",
     imgUrl: productImg02,
-    category: "sofa",
+    category: "hoodie",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -73,9 +73,9 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "FreshFit Hoodie",
     imgUrl: productImg03,
-    category: "sofa",
+    category: "hoodie",
     price: 173,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -95,9 +95,9 @@ const products = [
   },
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
+    productName: "MetroThreads Streetwear",
     imgUrl: productImg02,
-    category: "sofa",
+    category: "hoodie",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -117,9 +117,9 @@ const products = [
   },
   {
     id: "04",
-    productName: "Fllufy Sheep Sofa",
+    productName: "EliteUrban Hoodie",
     imgUrl: productImg04,
-    category: "sofa",
+    category: "hoodie",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -140,9 +140,9 @@ const products = [
 
   {
     id: "05",
-    productName: "Faux Velvet Sofa",
+    productName: "StyleMaven Hoodie",
     imgUrl: productImg05,
-    category: "sofa",
+    category: "hoodie",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -163,9 +163,9 @@ const products = [
 
   {
     id: "06",
-    productName: "Fllufy Sheep Sofa",
+    productName: "UrbanEdge Apparel",
     imgUrl: productImg06,
-    category: "sofa",
+    category: "hoodie",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -185,9 +185,9 @@ const products = [
   },
   {
     id: "07",
-    productName: "Sakarias Armchair",
+    productName: "UrbanEssentials Tees",
     imgUrl: productImg07,
-    category: "chair",
+    category: "T-Shirt",
     price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -208,9 +208,9 @@ const products = [
 
   {
     id: "27",
-    productName: "Modern Arm Sofa",
+    productName: "StreetTech Hoodie",
     imgUrl: productImg007,
-    category: "sofa",
+    category: "hoodie",
     price: 173,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -231,9 +231,9 @@ const products = [
 
   {
     id: "08",
-    productName: "Baltsar Chair",
+    productName: "StyleRevolution T-Shirts",
     imgUrl: productImg08,
-    category: "chair",
+    category: "T-Shirt",
     price: 89,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -254,9 +254,9 @@ const products = [
 
   {
     id: "09",
-    productName: "Helmar Chair",
+    productName: "StreetWear Vibes",
     imgUrl: productImg09,
-    category: "chair",
+    category: "T-Shirt",
     price: 112,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -277,9 +277,9 @@ const products = [
 
   {
     id: "10",
-    productName: "Apple iPhone 12 Pro",
+    productName: "UrbanStride Sneakers",
     imgUrl: productImg13,
-    category: "mobile",
+    category: "shoes",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -299,9 +299,9 @@ const products = [
   },
   {
     id: "25",
-    productName: "Sakarias Armchair",
+    productName: "UrbanChic T-Shirts",
     imgUrl: productImg10,
-    category: "chair",
+    category: "T-Shirt",
     price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -321,9 +321,9 @@ const products = [
   },
   {
     id: "11",
-    productName: "Apple iPhone 12 Max",
+    productName: "StreetFlex Shoes",
     imgUrl: productImg14,
-    category: "mobile",
+    category: "shoes",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -344,9 +344,9 @@ const products = [
 
   {
     id: "12",
-    productName: "Realme 8",
+    productName: "MetroStep Shoes",
     imgUrl: productImg15,
-    category: "mobile",
+    category: "shoes",
     price: 599,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -367,9 +367,9 @@ const products = [
 
   {
     id: "13",
-    productName: "One Plus Nord",
+    productName: "UrbanChic Footwear",
     imgUrl: productImg16,
-    category: "mobile",
+    category: "shoes",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -390,9 +390,9 @@ const products = [
 
   {
     id: "14",
-    productName: "Apple iPhone 13 Pro",
+    productName: "TrendZone Kicks",
     imgUrl: productImg17,
-    category: "mobile",
+    category: "shoes",
     price: 899,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -413,9 +413,9 @@ const products = [
 
   {
     id: "15",
-    productName: "Samsung Galaxy S22",
+    productName: "CityWalk Shoes",
     imgUrl: productImg18,
-    category: "mobile",
+    category: "shoes",
     price: 699,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -528,9 +528,9 @@ const products = [
 
   {
     id: "20",
-    productName: "Beat Studio Wireless",
+    productName: "StreetStyle Hats",
     imgUrl: productImg23,
-    category: "wireless",
+    category: "cap",
     price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -551,9 +551,9 @@ const products = [
 
   {
     id: "22",
-    productName: "Beat EP Headphones",
+    productName: "UrbanEdge Caps",
     imgUrl: productImg25,
-    category: "wireless",
+    category: "cap",
     price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",

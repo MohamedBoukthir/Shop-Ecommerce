@@ -20,27 +20,27 @@ const Home = () => {
 
   const [trendingProducts , setTrendingProducts] = useState([]);
   const [bestSalesProducts , setBestSalesProducts] = useState([]);
-  const [mobileProducts , setMobileProducts] = useState([]);
-  const [wirelessProducts , setWirelessProducts] = useState([]);
+  const [shoesProducts , setShoesProducts] = useState([]);
+  const [capProducts , setCapProducts] = useState([]);
   const [popularProducts , setPopularProducts] = useState([]);
 
   const year = new Date().getFullYear()
 
   useEffect (() => {
     const filteredTrendingProducts = products.filter(
-      (item) => item.category === "chair"
+      (item) => item.category === "T-Shirt"
     );
 
     const filteredBestSalesProducts = products.filter(
-      (item) => item.category === "sofa"
+      (item) => item.category === "hoodie"
     );
 
-    const filteredMobileProducts = products.filter(
-      (item) => item.category === "mobile"
+    const filteredShoesProducts = products.filter(
+      (item) => item.category === "shoes"
     );
 
-    const filteredWirelessProducts = products.filter(
-      (item) => item.category === "wireless"
+    const filteredCapProducts = products.filter(
+      (item) => item.category === "cap"
     );
 
     const filteredPopularProducts = products.filter(
@@ -49,8 +49,8 @@ const Home = () => {
 
     setTrendingProducts(filteredTrendingProducts);
     setBestSalesProducts(filteredBestSalesProducts);
-    setMobileProducts(filteredMobileProducts);
-    setWirelessProducts(filteredWirelessProducts);
+    setShoesProducts(filteredShoesProducts);
+    setCapProducts(filteredCapProducts);
     setPopularProducts(filteredPopularProducts);
   }, []);
 
@@ -66,8 +66,11 @@ const Home = () => {
             <Col lg='6' md='6'>
               <div className="hero__content">
                 <p className="hero__subtitle">Trending Product In {year} </p>
-                <h2>Make Your Interior Minimalistic & Modern</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eveniet aperiam asperiores dolore perspiciatis! Quos rerum quod obcaecati suscipit dignissimos!</p>
+                <h2>Embrace Urban Edge: Unleash Streetwear Style</h2>
+                <p>Discover an extraordinary online shopping experience. 
+                  Unleash your desires with an expansive collection, unbeatable deals,
+                  and seamless navigation. Elevate your style, fulfill your needs, and
+                  embrace effortless shopping today!</p>
                 <motion.button 
                   whileTap={ {scale: 1.2} } 
                   className="buy__btn">
@@ -147,8 +150,8 @@ const Home = () => {
         <Col lg='12' className="text-center mb-5" >
               <h2 className="section__title" >New Arrivals</h2>
           </Col>
-          <ProductsList data={mobileProducts}/>
-          <ProductsList data={wirelessProducts}/>
+          <ProductsList data={shoesProducts}/>
+          <ProductsList data={capProducts}/>
         </Row>
       </Container>
     </section>
