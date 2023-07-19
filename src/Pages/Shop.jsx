@@ -11,7 +11,6 @@ import ProductList from '../Components/UI/ProductsList'
 
 
 const Shop = () => {
-
   const [productsData , setProductsData] = useState(products)
 
   const handleFilter = e => {
@@ -54,6 +53,15 @@ const Shop = () => {
 
   };
 
+  const handleSearch = e => {
+    const searchTerm = e.target.value
+    const searchedProducts = products.filter(item => item.productName.toLowerCase().includes(searchTerm.toLowerCase()))
+
+    setProductsData(searchedProducts)
+
+  }
+
+
   return (
     <Helmet title='Shop'>
       <CommonSection title='Products'/>
@@ -67,7 +75,7 @@ const Shop = () => {
                   <option>Filter By Category</option>
                   <option value="hoodie">Hoodie</option>
                   <option value="shoes">Shoes</option>
-                  <option value="t-shirt">T-Shirt</option>
+                  <option value="T-Shirt">T-Shirt</option>
                   <option value="cap">Cap</option>
                   <option value="watch">Watch</option>
                 </select>
@@ -84,7 +92,10 @@ const Shop = () => {
             </Col>
             <Col lg='6' md='6' >
               <div className="search__box">
-                <input type="text" placeholder='Search..'/>
+                <input type="text" 
+                placeholder='Search..'
+                onChange={handleSearch}
+                />
                 <span>
                   <i class="ri-search-line"></i>
                 </span>
@@ -94,11 +105,12 @@ const Shop = () => {
         </Container>
       </section>
 
-      <section>
+      <section className='pt-0'>
         <Container>
           <Row>
             {
-              productsData.length === 0? <h1>No Products Are Found</h1>
+              productsData.length === 0? 
+              <h1 className='text-center' >No Products Are Found</h1>
               : <ProductList data={productsData} /> 
             }
           </Row>
