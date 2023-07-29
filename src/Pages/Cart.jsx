@@ -4,6 +4,7 @@ import { Container , Row , Col } from 'reactstrap'
 import { motion } from 'framer-motion'
 import { cartActions } from '../Redux/Slices/CartSlice'
 import { useSelector , useDispatch } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 import Helmet from '../Components/Helmet/Helmet'
 import CommonSection from '../Components/UI/CommonSection'
@@ -11,7 +12,8 @@ import '../Styles/Cart.css'
 
 const Cart = () => {
 
-  const cartItems = useSelector(state => state.cart.cartItems)
+  const cartItems = useSelector(state => state.cart.cartItems);
+  const totalAmount = useSelector((state) => state.cart.totalAmount);
 
   return (
     <Helmet title='Cart'>
@@ -40,13 +42,11 @@ const Cart = () => {
                 </thead>
 
                 <tbody>
-
                   {
                     cartItems.map((item , index) => (
                       <Tr item={item} key={index} />
                     ))
                   }
-
                 </tbody>
               </table>
 
@@ -54,7 +54,19 @@ const Cart = () => {
               )}
               </Col>
 
-              <Col lg='3'></Col>
+              <Col lg='3'>
+                <div>
+                  <h6 className='d-flex align-items-center justify-content-between' >
+                    Total
+                    <span className='fs-4 fw-bold' > {totalAmount} TND </span>
+                  </h6>
+                </div>
+                <p className='fs-6 mt-2' >Taxes And Shipping Will Calculate In Checkout</p>
+                <div>
+                  <button className="buy__btn w-100"><Link to='/checkout'>Checkout</Link></button>
+                  <button className="buy__btn w-100 mt-3"><Link to='/shop'>Continue Shopping</Link></button>
+                </div>
+              </Col>
 
             </Row>
           </Container>
@@ -63,7 +75,7 @@ const Cart = () => {
     )
 }
 
-const Tr = (item) => {
+const Tr = ({item}) => {
 
   const dispatch = useDispatch()
   const deleteProduct = () => {
