@@ -17,3 +17,8 @@
 .auth__form p a {
     color: rgba(255, 255, 255, 0.765);
 }
+
+.auth__form input[type='file'] {
+    color: #fff;
+    cursor: pointer;
+}
