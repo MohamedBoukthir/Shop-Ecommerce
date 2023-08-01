@@ -5,15 +5,15 @@
 /*  css variables */
 
 :root {
-    --card-bg-01: #e0aaff;
-    --card-bg-02: #c77dff;
-    --card-bg-03: #9d4edd;
-    --card-bg-04: #7b2cbf;
-    --primary-color: #240046;
-    --hero-bg: #9f86c0;
+    --card-bg-01: #e9ecef;
+    --card-bg-02: #dee2e6;
+    --card-bg-03: #ced4da;
+    --card-bg-04: #adb5bd;
+    --primary-color: #212529;
+    --hero-bg: #6c757d;
     --heading-fontSize: 2rem;
-    --small-text-color: #999;
-    --heading-text-color: #4a306d;
+    --small-text-color: #495057;
+    --heading-text-color: #343a40;
 }
 
 

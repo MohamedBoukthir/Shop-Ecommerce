@@ -3,7 +3,7 @@ import React,{useEffect , useState} from 'react'
 import '../../Styles/Clock.css'
 
 const Clock = () => {
-// Count Function  
+ 
   const [days , setDays] = useState()
   const [hours , setHours] = useState()
   const [minutes , setMinutes] = useState()
@@ -12,7 +12,7 @@ const Clock = () => {
   let interval;
 
   const countDown = () => {
-    const destination = new Date('July 30 , 2023').getTime()
+    const destination = new Date('July 30 , 2024').getTime()
     interval = setInterval (() => {
 
       const now = new Date().getTime()
