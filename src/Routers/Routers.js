@@ -10,6 +10,13 @@ import Signup from '../Pages/Signup'
 
 import ProtectedRoute from './ProtectedRoute'
 
+//Admin Routes
+import AddProducts from '../Admin/AddProducts'
+import AllProducts from '../Admin/AllProducts'
+import Dashboard from '../Admin/Dashboard'
+
+
+
 const Routers = () => {
   return (
     <Routes>
@@ -18,13 +25,14 @@ const Routers = () => {
       <Route path='shop' element={<Shop/>}/>
       <Route path='shop/:id' element={<ProductDetails/>}/>
       <Route path='cart' element={<Cart/>}/>
-      <Route
-        path='checkout'
-          element={
-          <ProtectedRoute>
-          <Checkout/>
-        </ProtectedRoute>
-                  }/>
+
+      <Route path='/*' element={<ProtectedRoute/>}>
+        <Route path='checkout' element={<Checkout/>} />
+        <Route path='dashboard' element={<Dashboard/>} />
+        <Route path='dashboard/all-products' element={<AllProducts/>} />
+        <Route path='dashboard/add-product' element={<AddProducts/>} />
+      </Route>
+        
       <Route path='login' element={<Login/>}/>
       <Route path='signup' element={<Signup/>}/>
     </Routes>
