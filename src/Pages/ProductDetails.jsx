@@ -7,13 +7,19 @@ import { useDispatch } from 'react-redux'
 import { cartActions } from '../Redux/Slices/CartSlice'
 import { toast } from 'react-toastify'
 
-import products from '../assets/data/products'
 import Helmet from '../Components/Helmet/Helmet'
 import CommonSection from '../Components/UI/CommonSection'
 import ProductsList from '../Components/UI/ProductsList'
 import '../Styles/Product-details.css'
 
+import { db } from '../Firebase.config'
+import { doc , getDoc } from 'firebase/firestore'
+
+import UseGetData from '../Custom-hooks/UseGetData'
+
 const ProductDetails = () => {
+
+  const [product , setProduct] = useState({})
 
   const [tab , setTab] = useState('desc')
   const [rating , setRating] = useState(null)
@@ -24,14 +30,30 @@ const ProductDetails = () => {
   const dispatch = useDispatch()
 
   const { id } = useParams()
-  const product = products.find(item => item.id === id)
+
+  const {data: products} = UseGetData('products')
+
+  const docRef = doc(db , 'products' , id)
+
+  useEffect(() => {
+    const getProduct = async() => {
+      const docSnap = await getDoc(docRef)
+
+      if (docSnap.exists()){
+        setProduct(docSnap.data())
+      } else {
+        console.log('No Product')
+      }
+    }
+    getProduct()
+  },[])
 
   const { 
       imgUrl ,
       productName ,
       price , 
-      avgRating , 
-      reviews , 
+      //avgRating , 
+      //reviews , 
       description , 
       shortDesc,
       category
@@ -103,7 +125,7 @@ const ProductDetails = () => {
                   </div>
 
                   <p>
-                    ( <span>{avgRating}</span> Ratings )
+                  {/*  ( <span>{avgRating}</span> Ratings ) */}
                     </p>
                 </div>
                 
@@ -135,7 +157,7 @@ const ProductDetails = () => {
                 </h6>
                 <h6 className={`${tab ==='rev' ? 'active__tab' : '' }`}
                 onClick={() => setTab('rev')}>
-                  Review ({reviews.length})
+                  Review 
                   </h6>
               </div>
 
@@ -147,14 +169,14 @@ const ProductDetails = () => {
               <div className='product__review mt-5'>
                 <div className="review__wrapper">
                   <ul>
-                    {
+                    {/*
                       reviews?.map((item , index) =>(
                         <li key={index} className='mb-4'>
                           <h6>Mohamed Boukthir</h6>
                           <span> {item.rating} (Rating) </span>
                           <p> {item.text} </p>
                         </li>
-                      ))}
+                      ))*/}
                   </ul>
 
                   <div className="review__form">
